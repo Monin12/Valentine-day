@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для тебя 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Падающие сердечки -->
+    <div class="hearts-bg"></div>
+
+    <!-- КОНВЕРТ -->
+    <div class="envelope-container">
+        <div class="envelope" id="envelope">
+            <div class="flap"></div>
+            <div class="body"></div>
+            <div class="circle" onclick="openEnvelope()">❤️</div>
+        </div>
+        
+        <!-- ЗАПИСКА ВНУТРИ -->
+        <div class="letter" id="letter">
+            <h2>Ты сделаешь меня счастливым?</h2>
+            <button class="yes-btn" onclick="showPhoto()">ДА ❤️</button>
+            <button class="no-btn" id="noBtn" onmouseover="moveNoButton()">Нет</button>
+        </div>
+    </div>
+
+    <!-- ФОТО (появляется после "ДА") -->
+    <div class="photo-frame" id="photoFrame">
+        <img src="your-photo.jpg" alt="Наше фото" class="your-photo">
+        <p class="caption">Спасибо, что ты есть! 💕</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
